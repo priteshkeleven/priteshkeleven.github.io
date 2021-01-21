@@ -1,0 +1,54 @@
+.about {
+  border: 1px solid indigo;
+  display: flex;
+  flex-direction: row;
+  padding: 5% 0px;
+}
+
+.about-me-img-container {
+  flex: 1 1;
+  display: flex;
+  justify-content: center;
+}
+
+.about-me-text {
+  flex: 1 1;
+  padding: 0px 10px;
+}
+
+.about-me-img {
+  max-width: 55%;
+  height: auto;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .about {
+    flex-direction: column;
+  }
+
+  .about-me-img {
+    max-width: 70%;
+    height: auto;
+  }
+
+  .about-me-text {
+    padding: 0px 10%;
+  }
+
+}
+
+@media (max-width: 767px) {
+
+  .about {
+    flex-direction: column;
+  }
+
+  .about-me-img {
+    max-width: 85%;
+    height: auto;
+  }
+
+}
+
+
