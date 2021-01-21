@@ -1,0 +1,14 @@
+.header-menu {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  border: 1px solid indigo;
+  padding: 1rem;
+  margin: 5px;
+  border-radius: 5px;
+  color: indigo;
+
+  li {
+    display: inline-flex;
+  }
+}
