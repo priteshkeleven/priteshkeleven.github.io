@@ -41,3 +41,9 @@ div {
   margin: 5px;
   border-radius: 5px;
 }
+
+
+::placeholder {
+  font-family: "Roboto Mono", monospace;
+  color: indigo;
+}

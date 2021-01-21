@@ -1,0 +1,99 @@
+$contact-input-width: 80%;
+
+.contact {
+  border: 1px solid indigo;
+  display: flex;
+  flex-direction: row;
+  padding: 5% 0px;
+}
+
+.contact-img-container {
+  flex: 1 1;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-form {
+  flex: 1 1;
+  padding: 0px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.contact-img {
+  max-width: 45%;
+  height: auto;
+}
+
+.input {
+  width: $contact-input-width;
+  height: 3em;
+  padding: 7px 15px;
+  font-family: "Roboto Mono", monospace;
+  border: 1px solid indigo;
+  border-radius: 5px;
+  color: indigo;
+  box-sizing: border-box;
+
+  &:focus {
+    outline-color: indigo;
+  }
+}
+
+.message {
+  height: 5rem;
+}
+
+.send-button {
+  background: indigo;
+  width: $contact-input-width;
+  padding: 7px 15px;
+  height: 3rem;
+  border-radius: 5px;
+  color: white;
+  border: 1px solid indigo;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .contact {
+    flex-direction: column-reverse;
+  }
+
+  .contact-img {
+    max-width: 50%;
+    height: auto;
+  }
+
+  .contact-form {
+    margin-top: 50px;
+  }
+
+}
+
+@media (max-width: 767px) {
+
+  .contact {
+    flex-direction: column-reverse;
+  }
+
+  .contact-img {
+    max-width: 50%;
+    height: auto;
+  }
+
+  .input {
+    width: 100%;
+  }
+
+  .send-button {
+    width: 100%;
+  }
+
+}
+
+
