@@ -47,15 +47,25 @@ $contact-input-width: 80%;
 }
 
 .send-button {
-  background: indigo;
   width: $contact-input-width;
   padding: 7px 15px;
   height: 3rem;
   border-radius: 5px;
-  color: white;
   border: 1px solid indigo;
+  background-color: white;
   font-weight: bold;
   letter-spacing: 2px;
+  cursor: pointer;
+  background-size: 200% 200%;
+  transition: background-position 250ms;
+  background-image: linear-gradient(to top, indigo 50%, white 0);
+  background-position: top;
+
+  &:hover {
+    color: white;
+    background-color: indigo;
+    background-position: bottom;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -84,6 +94,10 @@ $contact-input-width: 80%;
   .contact-img {
     max-width: 50%;
     height: auto;
+  }
+
+  .contact-form {
+    margin-top: 20px;
   }
 
   .input {

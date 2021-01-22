@@ -5,7 +5,7 @@ import contactMe from "./../../Assets/image/contact-me.svg";
 const Contact = () => {
     return (
         <>
-            <div className={"contact"}>
+            <div className={"contact"} id={"contact"}>
                 <div className={"contact-form"}>
                     <div>
                         <input type={"text"} className={"input name"} placeholder={"Your Name, Please!"}/>

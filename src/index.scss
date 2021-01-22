@@ -1,8 +1,12 @@
+@font-face {
+  font-family: "Roboto Mono";
+  src: local("RobotoMono"), url("./Assets/font/RobotoMono.ttf") format("truetype");
+  font-weight: normal;
+}
+
 body {
   margin: 0;
-  font-family: 'Roboto Mono', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Roboto Mono", monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
@@ -42,8 +46,23 @@ div {
   border-radius: 5px;
 }
 
-
 ::placeholder {
   font-family: "Roboto Mono", monospace;
   color: indigo;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: indigo;
+
+  &:hover {
+    background: purple;
+  }
 }
