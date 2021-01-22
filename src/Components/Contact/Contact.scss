@@ -48,11 +48,13 @@ $contact-input-width: 80%;
 
 .send-button {
   width: $contact-input-width;
+  font-family: "Roboto Mono", monospace;
   padding: 7px 15px;
   height: 3rem;
   border-radius: 5px;
   border: 1px solid indigo;
   background-color: white;
+  color: indigo;
   font-weight: bold;
   letter-spacing: 2px;
   cursor: pointer;

@@ -4,12 +4,15 @@
   font-weight: normal;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: "Roboto Mono", monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  scroll-behavior: smooth;
   color: indigo;
 }
 
@@ -61,6 +64,7 @@ div {
 
 ::-webkit-scrollbar-thumb {
   background: indigo;
+  border-radius: 2.5px;
 
   &:hover {
     background: purple;
